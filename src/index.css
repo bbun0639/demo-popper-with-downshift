@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,56 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#popcorn {
+  display: inline-block;
+  width: 134px;
+  height: 120px;
+  background-image: url("https://popper.js.org/images/popcorn-box.svg");
+  background-repeat: no-repeat;
+}
+
+#popper {
+  display: inline-block;
+  background: #ffffff;
+  color: #643045;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+#popper[data-popper-placement^="top"] > #arrow {
+  bottom: -4px;
+}
+
+#popper[data-popper-placement^="bottom"] > #arrow {
+  top: -4px;
+}
+
+#popper[data-popper-placement^="left"] > #arrow {
+  right: -4px;
+}
+
+#popper[data-popper-placement^="right"] > #arrow {
+  left: -4px;
+}
+
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+#arrow {
+  visibility: hidden;
+}
+
+#arrow::before {
+  visibility: visible;
+  content: "";
+  transform: rotate(45deg);
 }
