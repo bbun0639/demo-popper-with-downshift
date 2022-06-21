@@ -16,6 +16,10 @@ code {
     monospace;
 }
 
+#root {
+  background: #281e35;
+}
+
 #popcorn {
   display: inline-block;
   width: 134px;
@@ -48,6 +52,38 @@ code {
 
 #popper[data-popper-placement^="right"] > #arrow {
   left: -4px;
+}
+
+#popper[data-popper-placement^="top-start"] > #arrow {
+  left: -40px!important;
+}
+
+#popper[data-popper-placement^="top-end"] > #arrow {
+  left: 40px!important;
+}
+
+#popper[data-popper-placement^="bottom-start"] > #arrow {
+  left: -40px!important;
+}
+
+#popper[data-popper-placement^="bottom-end"] > #arrow {
+  left: 40px!important;
+}
+
+#popper[data-popper-placement^="left-start"] > #arrow {
+  top: -10px!important;
+}
+
+#popper[data-popper-placement^="left-end"] > #arrow {
+  top: 10px!important;
+}
+
+#popper[data-popper-placement^="right-start"] > #arrow {
+  top: -10px!important;
+}
+
+#popper[data-popper-placement^="right-end"] > #arrow {
+  top: 10px!important;
 }
 
 #arrow,

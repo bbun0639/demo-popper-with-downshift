@@ -2,15 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Popper from "./components/Popper";
+import DownShift from "./components/Downshift";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <div className="relative h-[100vh] bg-[#281e36] pt-10">
-      <Popper />
+    <div className="relative h-[100vh] pt-10 max-w-[20rem] mx-auto">
+      <DownShift />
     </div>
   </React.StrictMode>
 );
